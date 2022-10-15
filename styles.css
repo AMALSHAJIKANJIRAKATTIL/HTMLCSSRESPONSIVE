@@ -1,0 +1,159 @@
+.text-mons {
+    font-family: 'Montserrat', sans-serif;
+    margin: .5em;
+}
+
+.text-sans {
+    font-family: 'Open Sans', sans-serif;
+    margin: .9em;
+}
+
+.sans-semibold {
+    font-weight: 600;
+}
+.sans-regular {
+    font-weight: 400;
+}
+.mons-regular {
+    font-weight: 400;
+}
+
+.mons-semibold {
+    font-weight: 600;
+}
+
+.mons-bold {
+    font-weight: 700;
+}
+
+.text-big {
+    font-size: 2.0625em;
+}
+
+.text-small {
+    font-size: 0.8125em;
+}
+.text-white{
+    color: white;
+}
+.text-l {
+    font-size: 1.125em;
+}
+
+body{
+    background: #664baf url('./res/Group\ 30.svg') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    background-attachment: fixed; 
+    background-size: cover;
+}
+header{
+    height:5em;
+    width: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 2em;
+}
+header img{
+    height:auto;
+    width: 12%;
+}
+footer{
+    height:5em;
+    width: auto;
+    display: flex;
+    margin: 2em;
+    gap: 10px;
+    justify-content: right;
+    align-items: center;
+}
+.content{
+    min-height:30em;
+    width: auto;
+    margin-top: .6em;
+    margin-bottom: .6em;
+    padding: .8em;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+}
+button{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+border-radius: 29px;
+opacity: 1;
+color: #674BB1;
+border: none;
+    width: 10em;
+    height:3em;
+    margin:.9em
+}
+
+.main-img{
+    height: auto;
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-box{
+    padding: 3.5em;
+    margin: .6em;
+}
+
+.circles{
+    border-radius: 50%;
+    position: relative;
+    border: 1px solid #FFFFFF;
+
+    height: 1.8em;
+    width: 1.8em;
+
+}
+
+footer img{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width:768px){
+    body{
+        background: #664baf url('./res/Group\ 30\ mobile.svg') 0% 0% no-repeat padding-box;
+        opacity: 1;
+        background-attachment: fixed; 
+        background-size: cover;
+    }
+    .content{
+        display: block;
+    }
+    header{
+        margin: 10px;
+    }
+    header img{
+        width: 40%;
+        height: 40%;
+    }
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .p{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
